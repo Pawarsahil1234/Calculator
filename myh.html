@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My java script learning</title>
+</head>
+<script src="myjs.js"></script>
+<link rel="stylesheet" href="mycss.css">
+<body>
+<!--
+ <button>Click </button>
+  <button id="b1">b1 button</button>
+  <button class="b2" onclick="alert('you click me ')" > <img src="love.png" alt="love" class="myimg" >My Wishlist</button>
+  <button class="b3" onclick="alert('clike me ')" >Add to bag </button>
+<p>
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. Et nulla quisquam impedit ad, perspiciatis quis? Hic excepturi maiores placeat, odio natus reprehenderit, provident ipsam sequi, ab possimus eveniet praesentium! Aliquam.
+</p>
+-->
+
+
+<div class="calculator">
+  
+  <input type="text" id="display" readonly
+  >
+  <div class="button_calculator">
+   
+    <button class="bcal"  onclick="currentDisplay = currentDisplay + '1'; 
+    
+    document.querySelector('#display').value=currentDisplay">1</button>
+    <button class="bcal" onclick="currentDisplay = currentDisplay + '2'; 
+    
+    document.querySelector('#display').value=currentDisplay" >2</button>
+    <button class="bcal" onclick="currentDisplay = currentDisplay + '3'; 
+    
+    document.querySelector('#display').value=currentDisplay">3</button>
+    <button class="bcal" onclick="currentDisplay = currentDisplay + '4'; 
+    
+    document.querySelector('#display').value=currentDisplay">4</button>
+    <button class="bcal" onclick="currentDisplay = currentDisplay + '5'; 
+    
+    document.querySelector('#display').value=currentDisplay">5</button> 
+    <button class="bcal" onclick="currentDisplay = currentDisplay + '6'; 
+    
+    document.querySelector('#display').value=currentDisplay">6</button>
+    <button class="bcal" onclick="currentDisplay = currentDisplay + '7'; 
+    
+    document.querySelector('#display').value=currentDisplay">7</button>
+    <button class="bcal" onclick="currentDisplay = currentDisplay + '8'; 
+    
+    document.querySelector('#display').value=currentDisplay">8</button>
+    <button class="bcal" onclick="currentDisplay = currentDisplay + '9'; 
+    
+    document.querySelector('#display').value=currentDisplay">9</button>
+    <button class="bcal " onclick="currentDisplay = currentDisplay + '0'; 
+    
+    document.querySelector('#display').value=currentDisplay">0</button>
+    <button class="bcal" onclick="currentDisplay = currentDisplay + '+'; 
+    
+    document.querySelector('#display').value=currentDisplay">+</button>
+    <button class="bcal" onclick="currentDisplay = currentDisplay + '-'; 
+    
+    document.querySelector('#display').value=currentDisplay">-</button>
+    <button class="bcal" onclick="currentDisplay = currentDisplay + '*'; 
+    
+    document.querySelector('#display').value=currentDisplay">*</button>
+    <button class="bcal" onclick="currentDisplay = currentDisplay + '1/'; 
+    
+    document.querySelector('#display').value=currentDisplay">/</button>
+    <button class="bcal" onclick=" let result=eval(currentDisplay);
+    
+    currentDisplay=result;
+    document.querySelector('#display').value =currentDisplay" >=</button>
+
+
+
+
+    <button class="bcal" onclick="currentDisplay = ''; 
+    
+    document.querySelector('#display').value=currentDisplay">C</button>
+  </div></div>
+
+
+  <script>
+    let currentDisplay ='';
+    document.querySelector('#display').value=currentDisplay;
+  </script>
+</body>
+</html>
